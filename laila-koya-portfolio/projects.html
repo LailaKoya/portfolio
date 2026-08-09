@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Laila Koya</title>
+  <meta name="description" content="A selection of Laila Koya's IT coursework projects, including a Java chat application and a computer networking assignment." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <canvas id="net-bg" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo" aria-label="Laila Koya home">
+        <span class="prompt-user">laila</span><span class="prompt-sym">@</span>portfolio<span class="prompt-sym">:~$</span><span class="cursor-blink"></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-head container">
+      <p class="eyebrow">My projects</p>
+      <h1>Things I've built</h1>
+      <p>Coursework projects from my first year of IT studies, including a Java console application and a network design assignment.</p>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="grid-2">
+
+          <article class="card project-card reveal">
+            <div class="project-title-row">
+              <h3>QuickChat &mdash; Java Console Chat Application</h3>
+            </div>
+            <p>
+              A Java console application built for my Programming module (POE). Users register with a validated
+              username, password, and South African cell number, then log in to send, store, search, and delete
+              messages. Every rule is enforced with custom validation logic and regular expressions, and each
+              message is given a unique hash for tracking.
+            </p>
+            <div class="code-preview" aria-hidden="true"><span class="cm">// Conditions.java</span>
+<span class="kw">public boolean</span> <span class="fn">checkPasswordComplexity</span>() {
+    <span class="kw">return</span> password.length() >= <span class="str">8</span>
+        && password.matches(<span class="str">".*[A-Z].*"</span>)
+        && password.matches(<span class="str">".*[0-9].*"</span>);
+}</div>
+            <div class="tag-row">
+              <span class="tag cyan">Java</span>
+              <span class="tag">OOP</span>
+              <span class="tag">Regex Validation</span>
+              <span class="tag violet">Console App</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/EMKNDN/prog5121-g1-2026-poe-LailaKoya" target="_blank" rel="noopener">View repository on GitHub &rarr;</a>
+            </div>
+          </article>
+
+          <article class="card project-card reveal">
+            <div class="project-title-row">
+              <h3>Healthcare Facility Network Design</h3>
+            </div>
+            <p>
+              A Computer Networks assignment analysing and redesigning the network for a healthcare facility.
+              I motivated a move from a peer-to-peer setup to a client-server model for better security and
+              reliability, diagnosed a connectivity fault using the OSI model, and proposed a cabling and IP
+              addressing plan &mdash; fibre optic for the server backbone, Cat6 for endpoints, with a structured
+              private IP scheme for every device.
+            </p>
+            <div class="code-preview" aria-hidden="true"><span class="cm"># IP addressing plan (excerpt)</span>
+Main Server      192.168.20.10   Server Room
+Doctor PC 1      192.168.20.30   Consultation Room 1
+Wireless AP 1    192.168.20.50   Hallway Ceiling</div>
+            <div class="tag-row">
+              <span class="tag cyan">Network Design</span>
+              <span class="tag">OSI Model</span>
+              <span class="tag violet">IP Addressing</span>
+              <span class="tag">Troubleshooting</span>
+            </div>
+            <div class="project-links">
+              <span style="color: var(--text-faint);">Written assignment &mdash; available on request</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="card reveal" style="text-align:center;">
+          <h3>More projects on the way</h3>
+          <p style="margin-top: 10px;">
+            I'll keep adding to this page as I complete new coursework and personal projects throughout my studies.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <span>&copy; 2026 Laila Koya. Built with HTML, CSS &amp; JavaScript.</span>
+    <span><a href="https://github.com/LailaKoya" target="_blank" rel="noopener">GitHub</a> &middot; <a href="https://www.linkedin.com/in/laila-koya-30428124b/" target="_blank" rel="noopener">LinkedIn</a></span>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
