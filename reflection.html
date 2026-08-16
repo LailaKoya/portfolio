@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reflection | Laila Koya</title>
+  <meta name="description" content="Laila Koya's professional reflection on her first year studying IT, her strongest skills, and her plan to grow as an aspiring software developer." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <canvas id="net-bg" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="nav-wrap">
+    <nav class="nav container">
+      <a href="index.html" class="nav-logo" aria-label="Laila Koya home">
+        <span class="prompt-user">laila</span><span class="prompt-sym">@</span>portfolio<span class="prompt-sym">:~$</span><span class="cursor-blink"></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="reflection.html" class="active">Reflection</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-head container">
+      <p class="eyebrow">Professional reflection</p>
+      <h1>What this module taught me</h1>
+      <p>A look back at my first year of IT studies, and where I want to take my skills next.</p>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="timeline reveal">
+
+          <div class="timeline-item">
+            <h3>What I've learned</h3>
+            <p>
+              This module pushed me to think beyond just getting code to run, and toward building something a
+              real user could actually rely on. Working on the QuickChat application taught me how much
+              validation logic goes into even a simple registration and login system &mdash; checking a
+              username format, enforcing password complexity, and confirming a phone number all required me
+              to think carefully about edge cases, not just the "happy path." Alongside that, my computer
+              networking coursework taught me to think about IT at a systems level: how a client-server model,
+              cabling choice, and IP addressing plan all work together to keep something like a healthcare
+              facility's network secure and reliable. Together, these modules showed me that good IT work is
+              as much about structure and planning as it is about writing code.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h3>My strongest skill right now</h3>
+            <p>
+              I'd say my strongest current skill is problem-solving through logical validation &mdash; breaking
+              a requirement down into clear conditions and testing them methodically. When I built the
+              validation rules for QuickChat, I found it satisfying to work through each rule (username
+              formatting, password strength, phone number format) one at a time and confirm each one actually
+              worked before moving to the next. That habit of testing as I go has already made my code more
+              reliable.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h3>A skill I want to improve</h3>
+            <p>
+              I want to get stronger at structuring larger programs cleanly &mdash; splitting logic across
+              classes in a way that's easy to follow and easy to extend, rather than figuring out the structure
+              as I go. As my projects grow beyond a single class or two, I know this will matter more.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h3>How I'll develop it</h3>
+            <p>
+              To build this skill, I plan to study how well-structured open-source Java projects on GitHub
+              organise their classes, practise sketching out a program's structure before I start coding, and
+              ask for feedback on my code structure from lecturers and peers rather than only checking that it
+              runs. I'd also like to start writing simple tests for my own code earlier in the process, instead
+              of only validating manually at the end.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <h3>How this portfolio supports my future</h3>
+            <p>
+              Having a live portfolio means I don't have to start from zero every time I apply for something
+              &mdash; internships, vacation work, or eventually a graduate role. It gives me a place to keep
+              adding projects as I complete them, track my own growth over time, and show potential employers
+              not just what I've built, but how I think about building it. I plan to keep this site updated
+              throughout my degree.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <span>&copy; 2026 Laila Koya. Built with HTML, CSS &amp; JavaScript.</span>
+    <span><a href="https://github.com/LailaKoya" target="_blank" rel="noopener">GitHub</a> &middot; <a href="https://www.linkedin.com/in/laila-koya-30428124b/" target="_blank" rel="noopener">LinkedIn</a></span>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
